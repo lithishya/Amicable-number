@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner num=new Scanner(System.in);
+	int a=num.nextInt();
+	Scanner digit=new Scanner(System.in);
+	int b=digit.nextInt();
+	int sum1=0;
+	int sum2=0;
+	for(int i=1;i<a;i++){
+	    if(a%i==0){
+	   sum1+=i; }}
+	for(int j=1;j<b;j++) {
+	       if(b%j==0){
+	       sum2+=j;}
+	    }
+	System.out.println((sum1==b&&sum2==a?("AMICABLE"):("NOT AMICABLE")));
+	}
+    }
